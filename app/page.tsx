@@ -2,6 +2,7 @@ import {Button} from "@/components/ui/button"
 import DashboardCard from "@/components/dashboard/DashboardCard";
 import PostsTable from "@/components/posts/PostsTable";
 import { Newspaper, Folder, User, MessageCircle } from "lucide-react";
+import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
           count={100} icon={<MessageCircle
           className="text-slate-500" size={72} />}/>
       </div>
+      <AnalyticsChart/>
       <PostsTable title='Latest Posts' limit={5}/>
     </>
   );
